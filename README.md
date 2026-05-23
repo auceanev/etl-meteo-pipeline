@@ -17,7 +17,7 @@ API Open Meteo → extract.py → transform.py → load.py → SQLite
 ## Installation
 
 ```bash
-git clone git@github.com:TonPseudo/etl-meteo-pipeline.git
+git clone git@github.com:auceanev/etl-meteo-pipeline.git
 cd etl-meteo-pipeline
 python3 -m venv venv
 source venv/bin/activate
@@ -29,16 +29,17 @@ pip install -r requirements.txt
 ```bash
 python pipeline.py
 ```
-
+---
 ## Structure
-
+```
 etl_meteo/
 ├── extract.py      # Appel API Open Meteo
 ├── transform.py    # Nettoyage et enrichissement pandas
 ├── load.py         # Stockage SQLite
 ├── pipeline.py     # Orchestrateur ETL
 └── requirements.txt
-
+```
+---
 ## Données collectées
 
 - Température horaire (°C)
